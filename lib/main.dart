@@ -3,6 +3,7 @@ import 'ui_widgets/section_title.dart';
 import 'ui_widgets/album_section.dart';
 import 'ui_widgets/dog_section.dart';
 import 'ui_widgets/space_news_section.dart';
+import 'ui_widgets/bored_section.dart'; // <-- NEW
 
 void main() => runApp(const MyApp());
 
@@ -28,6 +29,10 @@ class MyApp extends StatelessWidget {
 
             SectionTitle('🛰️ Space News'),
             SizedBox(height: 300, child: SpaceNewsSection()),
+            Divider(height: 32),
+
+            SectionTitle('🎲 Bored Activity'),
+            BoredSection(), // <-- NEW
           ],
         ),
       ),
